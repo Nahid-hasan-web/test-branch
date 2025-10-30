@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.main_menu{
+    padding: 20px 0 ;
+    background-color: black;
+}
+.main_menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+
+}
+.main_menu ul li{
+    position: relative;
+}
+.main_menu ul li a{
+    color: white;
+}
+.main_menu ul li  ul{
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: gray;
+    padding: 20px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .4s;
+}
+
+.main_menu ul li:hover ul{
+    visibility: visible;
+    opacity: 100%;
+}
